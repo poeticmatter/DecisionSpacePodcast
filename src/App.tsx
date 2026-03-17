@@ -1,7 +1,8 @@
 import { useState, useRef } from 'react';
 import { Play, Pause } from 'lucide-react';
 import { motion } from 'motion/react';
-import responseAudio from './C. Thi Nguyen-omg.mp3';
+
+const responseAudio = `${import.meta.env.BASE_URL}response.mp3`;
 
 export default function App() {
   const [isPlaying, setIsPlaying] = useState(false);
